@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* App.css */
+/* ...existing styles... */
+.title{
+  color: black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  width: auto; /* Adjust as necessary */
+  height: 400px;
+  margin-right: 20px; /* Add some spacing between logo and text */
+  align-content: left;
+}
+/* App.css */
+/* ...existing styles... */
+
+.search-box {
+  width: 700px;
+  padding: 10px;
+  margin-top: 10px;
+  border: 5px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+/* App.css */
+/* ...existing styles... */
+
+.header-content {
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-container {
+  display: flex;
 }
+
+.search-box {
+  width: 700px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #233345;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  cursor: pointer;
+  max-height: 100%;
+}
+
+/* Additional styles can be added here */
+
+
+.spacer {
+  height: 20px; /* Adjust as needed */
+}
+
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #ffffff;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product {
+  text-align: center;
+  margin-bottom: 30px;
+  width: 250px;
+}
+
+.product img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+
+footer {
+  background-color: #d9d9d9;
+  color: #d9d9d9;
+  text-align: center;
+  padding: 20px;
+}
+.boat-logo {
+  width: 50px; /* Adjust the width of the boat logo */
+  height: auto;
+  margin-right: 100px; /* Add some spacing between the boat logo and the text */
+  margin-top: 80px; /* Shift two spaces below */
+}
+.original-price {
+  text-decoration: line-through; /* Strikethrough */
+  color: #ff0000; /* Color of the original price */
+  margin-right: 5px; /* Add some spacing between prices */
+}
+
+.discounted-price {
+  color: #0f0f0f; /* Color of the discounted price */
+}
+
+
