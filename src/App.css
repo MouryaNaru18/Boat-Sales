@@ -88,54 +88,11 @@ nav ul li a {
   text-decoration: none;
 }
 
-main {
-  padding: 20px;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-
-.hero {
-  text-align: center;
-  padding: 50px 0;
-  background-color: #ffffff;
-}
-
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.product {
-  text-align: center;
-  margin-bottom: 30px;
-  width: 250px;
-}
-
-.product img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-}
-
-
-footer {
-  background-color: #d9d9d9;
-  color: #d9d9d9;
-  text-align: center;
-  padding: 20px;
-}
-.boat-logo {
-  width: 50px; /* Adjust the width of the boat logo */
-  height: auto;
-  margin-right: 100px; /* Add some spacing between the boat logo and the text */
-  margin-top: 80px; /* Shift two spaces below */
-}
-.original-price {
-  text-decoration: line-through; /* Strikethrough */
-  color: #ff0000; /* Color of the original price */
-  margin-right: 5px; /* Add some spacing between prices */
-}
-
-.discounted-price {
-  color: #0f0f0f; /* Color of the discounted price */
-}
-
