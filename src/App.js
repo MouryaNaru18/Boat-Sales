@@ -1,85 +1,169 @@
-// App.js
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from 'react-router-dom';
 import './App.css';
-import logo from './images/logo.png'; // Import the logo image
+import logo from './images/logo.png';
 import boatlogo from './images/boat.png'; 
 import h1 from './images/h1.jpg';
 import h2 from './images/h2.jpg';
 import h3 from './images/h3.jpg';
+import h4 from './images/h4.jpg';
+import h5 from './images/h5.jpg';
+import h6 from './images/h6.jpg';
+import h7 from './images/h7.jpg';
+import h8 from './images/h8.jpg';
+import h9 from './images/h9.jpg';
+import About from './About'; // Import the About page component
+import Product1 from './Components/Product1'; // Import Product1 page component
+import Product2 from './Components/Product2'; // Import Product2 page component
+import Product3 from './Components/Product3'; // Import Product3 page component
+
 function App() {
   return (
-    <div className="App">
-      <header>
-        {/* Add the logo */}
-        <img src={logo} alt="Logo" className="logo" />
+    <Router>
+      <div className="App">
+        <header>
+          <img src={logo} alt="Logo" className="logo" />
+          <div>
+            <h1 className="title">Price History & Tracker</h1>
+            <input type="text" className="search-box" placeholder="Search Keyword or Paste Product link..." />
+            <button className="search-button">Search</button>
+            <div className="spacer"></div>
+            <nav className='slides'>
+              <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><a href="#">Shop</a></li>
+                <li><Link to="/about">About</Link></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
 
-        <div>
-          <h1 className="title">Price History & Tracker</h1> {/* Apply the "title" class */}
-          
-          {/* Add the search bar */}
-          <input type="text" className="search-box" placeholder="Search Keyword or Paste Product link..." />
-          <button className="search-button">Search</button>
-          {/* Add some space */}
-          <div className="spacer"></div>
+        <main>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/boAt Rockerz 551ANC" element={<Product1 />} />
+            <Route path="/boAt Rockerz 255 Pro+" element={<Product2 />} />
+            <Route path="/boAt Bassheads 102" element={<Product3 />} />
+          </Routes>
+        </main>
 
-          {/* Add the navigation */}
-          <nav className='slides'>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+        <footer className='footer'>
+          <p>&copy; 2024 Headphone Paradise. All rights reserved.</p>
+        </footer>
+      </div>
+    </Router>
+  );
+}
 
-      <main>
+function Home() {
+  const navigate = useNavigate();
 
-        <section className="products">
+  const navigateToAbout = () => {
+    navigate('/about');
+  };
 
+  const navigateToProduct1 = () => {
+    navigate('/boAt Rockerz 551ANC');
+  };
+
+  const navigateToProduct2 = () => {
+    navigate('/boAt Rockerz 255 Pro+');
+  };
+
+  const navigateToProduct3 = () => {
+    navigate('/boAt Bassheads 102');
+  };
+
+  return (
+    <div>
+      <section className="products">
         <div className="product">
-    <img src={boatlogo} alt="Boat Logo" className="boat-logo" /> {/* Boat logo */}
-    <h3>Featured Models</h3> {/* Text */}
-  </div>
-          <div className="product">
-          <img src={h1} alt="Headphones 1" style={{ width: '100px', height: 'auto' }} />
+          <img src={boatlogo} alt="Boat Logo" className="boat-logo" style={{ width: '150px', height: 'auto' }}/>
+          <h3>Featured Models</h3>
+        </div>
+        <div className="product">
+          <img src={h1} alt="Headphones 1" style={{ width: '140px', height: 'auto' }} />
+          <h3>boAt Rockerz 551ANC</h3>
+          <p><span className="discounted-price">₹₹3,299</span>
+             <span className="original-price">₹7,990</span>
+          </p>
+          <button className='b1' onClick={navigateToProduct1}>Track Price</button>
+        </div>
+        <div className="product">
+          <img src={h2} alt="Headphones 1" style={{ width: '145px', height: 'auto' }} />
+          <h3>boAt Rockerz 255 Pro+	</h3>
+          <p><span className="discounted-price">₹1,599</span>
+             <span className="original-price">₹3,990</span>
+          </p>
+          <button className='b2' onClick={navigateToProduct2}>Track Price</button>
+        </div>
+        <div className="product">
+          <img src={h3} alt="Headphones 1" style={{ width: '115px', height: 'auto' }} />
+          <h3>boAt Bassheads 102</h3>
+          <p><span className="discounted-price">₹499</span>
+             <span className="original-price">₹1,290</span>
+          </p>
+          <button className='b3' onClick={navigateToProduct3}>Track Price</button>
+        </div>
+        <div className="product">
+          <img src={h4} alt="Headphones 1" style={{ width: '120px', height: 'auto' }} />
+          <h3>boAt Immortal 700</h3>
+          <p><span className="discounted-price">₹₹3,299</span>
+             <span className="original-price">₹7,990</span>
+          </p>
+          <button className='b4' onClick={navigateToProduct1}>Track Price</button>
+        </div>
+        <div className="product">
+          <img src={h5} alt="Headphones 1" style={{ width: '120px', height: 'auto' }} />
+          <h3>boAt Nirvanaa 751 ANC</h3>
+          <p><span className="discounted-price">₹₹3,299</span>
+             <span className="original-price">₹7,990</span>
+          </p>
+          <button className='b5' onClick={navigateToProduct1}>Track Price</button>
+        </div>
+        <div className="product">
+          <img src={h6} alt="Headphones 1" style={{ width: '125px', height: 'auto' }} />
+          <h3>boAt Bassheads 100</h3>
+          <p><span className="discounted-price">₹₹3,299</span>
+             <span className="original-price">₹7,990</span>
+          </p>
+          <button className='b6' onClick={navigateToProduct1}>Track Price</button>
+        </div>
+        <div className="product">
+          <img src={h7} alt="Headphones 1" style={{ width: '125px', height: 'auto' }} />
+          <h3>boAt Bassheads 220</h3>
+          <p><span className="discounted-price">₹₹3,299</span>
+             <span className="original-price">₹7,990</span>
+          </p>
+          <button className='b7' onClick={navigateToProduct1}>Track Price</button>
+        </div>
+        <div className="product">
+          <img src={h8} alt="Headphones 1" style={{ width: '145px', height: 'auto' }} />
+          <h3>boAt Rockerz 195V2 Pro</h3>
+          <p><span className="discounted-price">₹₹3,299</span>
+             <span className="original-price">₹7,990</span>
+          </p>
+          <button className='b8' onClick={navigateToProduct1}>Track Price</button>
+        </div>
+        <div className="product">
+          <img src={h9} alt="Headphones 1" style={{ width: '145px', height: 'auto' }} />
+          <h3>boAt Rockerz 103 V2 Pro</h3>
+          <p><span className="discounted-price">₹₹3,299</span>
+             <span className="original-price">₹7,990</span>
+          </p>
+          <button className='b9' onClick={navigateToProduct1}>Track Price</button>
+        </div>
+      </section>
 
-            <h3>boAt Rockerz 450 Wireless Bluetooth Headphone With Up to 8H Playback</h3>
-            <p><span className="discounted-price">₹1,699</span> {/* Discounted price */}<span className="original-price">₹2,017</span> {/* Strikethrough */}
-            </p>
-            <button>Track Price</button>
-          </div>
-
-
-          <div className="product">
-          <img src={h2} alt="Headphones 1" style={{ width: '150px', height: 'auto' }} />
-            <h3>BoAt Airdopes 391 V5.0 Bluetooth Truly Wireless In Ear Earbuds</h3>
-            <p><span className="discounted-price">₹1729</span> {/* Discounted price */}<span className="original-price">₹2699</span> {/* Strikethrough */}
-            </p>
-            <button>Track Price</button>
-          </div>
-          <div className="product">
-          <img src={h3} alt="Headphones 1" style={{ width: '135px', height: 'auto' }} />
-            <h3>BoAt BassHeads 100 In-Ear Wired Headphones With Mic (Black)</h3>
-            <p><span className="discounted-price">₹329</span> {/* Discounted price */}<span className="original-price">₹399</span> {/* Strikethrough */}
-            </p>
-            <button>Track Price</button>
-          </div>
-        </section>
-
-        <section className="hero">
+      <section className="hero">
         <marquee><p><i>Track prices of your favourite products on Amazon.</i></p></marquee>
-          <h5><i>
-          Boatsales is a price history tracking tool that enables you to unlock the secret ways to do smart shopping,make informed decisions,and achieve shopping goals as per your budget plans. With our key features,you can find the right time to purchase the products that you want and can grab the best deals. Use our tool and be a smart & savvy shopper.
-          </i></h5>
-          
-        </section>
-      </main>
-
-      <footer className='footer'>
-        <p>&copy; 2024 Headphone Paradise. All rights reserved.</p>
-      </footer>
+        <h5><i>
+          Boatsales is a price history tracking tool that enables you to unlock the secret ways to do smart shopping, make informed decisions, and achieve shopping goals as per your budget plans. With our key features, you can find the right time to purchase the products that you want and can grab the best deals. Use our tool and be a smart & savvy shopper.
+        </i></h5>
+        <button onClick={navigateToAbout}>Learn More About Us</button> {/* Add navigation button */}
+      </section>
     </div>
   );
 }
