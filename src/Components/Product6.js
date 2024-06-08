@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 import PriceChart from './PriceChart';
 
-const Product3 = () => {
+const Product6 = () => {
   // Sample data for testing
   const [data, setData] = useState({
-    'Price_June07': '₹499',
-    'Price_June08': '₹499'
+    'Price_June07': '₹399',
+    'Price_June08': '₹399'
   });
 
   return (
     <div>
-      <h2>boAt Bassheads 102</h2>
+      <h2>boAt Bassheads 100</h2>
       <PriceChart data={data} />
     </div>
   );
 };
 
-export default Product3;
+export default Product6;

@@ -16,7 +16,12 @@ import About from './About'; // Import the About page component
 import Product1 from './Components/Product1'; // Import Product1 page component
 import Product2 from './Components/Product2'; // Import Product2 page component
 import Product3 from './Components/Product3'; // Import Product3 page component
-
+import Product4 from './Components/Product4'; // Import Product1 page component
+import Product5 from './Components/Product5'; // Import Product2 page component
+import Product6 from './Components/Product6'; // Import Product3 page component
+import Product7 from './Components/Product7'; // Import Product2 page component
+import Product8 from './Components/Product8'; // Import Product3 page component
+import Product9 from './Components/Product9'; // Import Product3 page component
 function App() {
   return (
     <Router>
@@ -46,6 +51,12 @@ function App() {
             <Route path="/boAt Rockerz 551ANC" element={<Product1 />} />
             <Route path="/boAt Rockerz 255 Pro+" element={<Product2 />} />
             <Route path="/boAt Bassheads 102" element={<Product3 />} />
+            <Route path="/boAt Nirvanaa 751 ANC" element={<Product4 />} />
+            <Route path="/boAt Immortal 700" element={<Product5 />} />
+            <Route path="/boAt Bassheads 100" element={<Product6 />} />
+            <Route path="/boAt Bassheads 220" element={<Product7 />} />
+            <Route path="/boAt Rockerz 195V2 Pro" element={<Product8 />} />
+            <Route path="/boAt Rockerz 103 V2 Pro" element={<Product9 />} />
           </Routes>
         </main>
 
@@ -74,6 +85,28 @@ function Home() {
 
   const navigateToProduct3 = () => {
     navigate('/boAt Bassheads 102');
+  };
+  const navigateToProduct4 = () => {
+    navigate('/boAt Nirvanaa 751 ANC');
+  };
+
+  const navigateToProduct5 = () => {
+    navigate('/boAt Immortal 700');
+  };
+
+  const navigateToProduct6 = () => {
+    navigate('/boAt Bassheads 100');
+  };
+  const navigateToProduct7 = () => {
+    navigate('/boAt Bassheads 220');
+  };
+
+  const navigateToProduct8 = () => {
+    navigate('/boAt Rockerz 195V2 Pro');
+  };
+
+  const navigateToProduct9 = () => {
+    navigate('/boAt Rockerz 103 V2 Pro');
   };
 
   return (
@@ -110,50 +143,50 @@ function Home() {
         <div className="product">
           <img src={h4} alt="Headphones 1" style={{ width: '120px', height: 'auto' }} />
           <h3>boAt Immortal 700</h3>
-          <p><span className="discounted-price">₹₹3,299</span>
-             <span className="original-price">₹7,990</span>
+          <p><span className="discounted-price">₹2,799</span>
+             <span className="original-price">₹6,990</span>
           </p>
-          <button className='b4' onClick={navigateToProduct1}>Track Price</button>
+          <button className='b4' onClick={navigateToProduct4}>Track Price</button>
         </div>
         <div className="product">
           <img src={h5} alt="Headphones 1" style={{ width: '120px', height: 'auto' }} />
           <h3>boAt Nirvanaa 751 ANC</h3>
-          <p><span className="discounted-price">₹₹3,299</span>
+          <p><span className="discounted-price">₹4,499</span>
              <span className="original-price">₹7,990</span>
           </p>
-          <button className='b5' onClick={navigateToProduct1}>Track Price</button>
+          <button className='b5' onClick={navigateToProduct5}>Track Price</button>
         </div>
         <div className="product">
           <img src={h6} alt="Headphones 1" style={{ width: '125px', height: 'auto' }} />
           <h3>boAt Bassheads 100</h3>
-          <p><span className="discounted-price">₹₹3,299</span>
-             <span className="original-price">₹7,990</span>
+          <p><span className="discounted-price">₹399</span>
+             <span className="original-price">₹999</span>
           </p>
-          <button className='b6' onClick={navigateToProduct1}>Track Price</button>
+          <button className='b6' onClick={navigateToProduct6}>Track Price</button>
         </div>
         <div className="product">
           <img src={h7} alt="Headphones 1" style={{ width: '125px', height: 'auto' }} />
           <h3>boAt Bassheads 220</h3>
-          <p><span className="discounted-price">₹₹3,299</span>
-             <span className="original-price">₹7,990</span>
+          <p><span className="discounted-price">₹499</span>
+             <span className="original-price">₹1,290</span>
           </p>
-          <button className='b7' onClick={navigateToProduct1}>Track Price</button>
+          <button className='b7' onClick={navigateToProduct7}>Track Price</button>
         </div>
         <div className="product">
           <img src={h8} alt="Headphones 1" style={{ width: '145px', height: 'auto' }} />
           <h3>boAt Rockerz 195V2 Pro</h3>
-          <p><span className="discounted-price">₹₹3,299</span>
-             <span className="original-price">₹7,990</span>
+          <p><span className="discounted-price">₹1,399</span>
+             <span className="original-price">₹3,490</span>
           </p>
-          <button className='b8' onClick={navigateToProduct1}>Track Price</button>
+          <button className='b8' onClick={navigateToProduct8}>Track Price</button>
         </div>
         <div className="product">
           <img src={h9} alt="Headphones 1" style={{ width: '145px', height: 'auto' }} />
           <h3>boAt Rockerz 103 V2 Pro</h3>
-          <p><span className="discounted-price">₹₹3,299</span>
-             <span className="original-price">₹7,990</span>
+          <p><span className="discounted-price">₹999</span>
+             <span className="original-price">₹3,490</span>
           </p>
-          <button className='b9' onClick={navigateToProduct1}>Track Price</button>
+          <button className='b9' onClick={navigateToProduct9}>Track Price</button>
         </div>
       </section>
 

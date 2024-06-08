@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PriceChart from './PriceChart';
 
-function Product2() {
+const Product2 = () => {
+  // Sample data for testing
+  const [data, setData] = useState({
+    'Price_June07': '₹1,599',
+    'Price_June08': '₹1,599'
+  });
+
   return (
     <div>
-      <h2>BoAt Airdopes 391 V5.0 Bluetooth Truly Wireless In Ear Earbuds</h2>
-      <p>Details and price history for BoAt Airdopes 391 V5.0 Bluetooth Truly Wireless In Ear Earbuds.</p>
+      <h2>boAt Rockerz 255 Pro+</h2>
+      <PriceChart data={data} />
     </div>
   );
-}
+};
 
 export default Product2;

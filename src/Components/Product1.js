@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PriceChart from './PriceChart';
 
-function Product1() {
+const Product1 = () => {
+  // Sample data for testing
+  const [data, setData] = useState({
+    'June07': '₹3,299',
+    'June08': '₹3,299'
+  });
+
   return (
     <div>
-      <h2>boAt Rockerz 450 Wireless Bluetooth Headphone</h2>
-      <p>Details and price history for boAt Rockerz 450 Wireless Bluetooth Headphone.</p>
+      <h2>boAt Rockerz 551ANC</h2>
+      <PriceChart data={data} />
     </div>
   );
-}
+};
 
 export default Product1;
