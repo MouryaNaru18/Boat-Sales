@@ -5,7 +5,9 @@ const Product5 = () => {
   // Sample data for testing
   const [data, setData] = useState({
     'Price_June07': '₹4,499',
-    'Price_June08': '₹4,499'
+    'Price_June08': '₹4,499',
+    'Price_June09': '₹4,499',
+    'Price_June10': '₹4,499'
   });
 
   return (

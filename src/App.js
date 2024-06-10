@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import './App.css';
 import logo from './images/logo.png';
 import boatlogo from './images/boat.png'; 
@@ -117,7 +118,7 @@ function Home() {
           <h3>Featured Models</h3>
         </div>
         <div className="product">
-          <img src={h1} alt="Headphones 1" style={{ width: '140px', height: 'auto' }} />
+          <img src={h1} alt="Headphones 1" style={{ width: '145px', height: 'auto' }} />
           <h3>boAt Rockerz 551ANC</h3>
           <p><span className="discounted-price">₹3,299</span>
              <span className="original-price">₹7,990</span>
