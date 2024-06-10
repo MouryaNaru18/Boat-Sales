@@ -119,7 +119,7 @@ function Home() {
         <div className="product">
           <img src={h1} alt="Headphones 1" style={{ width: '140px', height: 'auto' }} />
           <h3>boAt Rockerz 551ANC</h3>
-          <p><span className="discounted-price">₹₹3,299</span>
+          <p><span className="discounted-price">₹3,299</span>
              <span className="original-price">₹7,990</span>
           </p>
           <button className='b1' onClick={navigateToProduct1}>Track Price</button>
