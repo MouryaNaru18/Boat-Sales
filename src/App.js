@@ -191,7 +191,7 @@ function Home() {
       </section>
 
       <section className="hero">
-        <marquee><p><i>Track prices of your favourite products on Amazon.</i></p></marquee>
+        <marquee><p><i>Track prices of your favourite products on Boat Website.</i></p></marquee>
         <h5><i>
           Boatsales is a price history tracking tool that enables you to unlock the secret ways to do smart shopping, make informed decisions, and achieve shopping goals as per your budget plans. With our key features, you can find the right time to purchase the products that you want and can grab the best deals. Use our tool and be a smart & savvy shopper.
         </i></h5>

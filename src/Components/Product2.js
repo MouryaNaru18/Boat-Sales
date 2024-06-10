@@ -17,3 +17,4 @@ const Product2 = () => {
 };
 
 export default Product2;
+
