@@ -7,7 +7,8 @@ const Product8 = () => {
     'Price_June07': '₹1,399',
     'Price_June08': '₹1,399',
     'Price_June09': '₹1,399',
-    'Price_June10': '₹1,399'
+    'Price_June10': '₹1,399',
+    'Price_June11': '₹1,399'
   });
 
   return (
