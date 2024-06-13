@@ -10,6 +10,7 @@ const Product2 = () => {
     'Price_June10': '₹1,599',
     'Price_June11': '₹1,599',
     'Price_June12': '₹1,249',
+    'Price_June13': '₹1,249'
 
   });
 
